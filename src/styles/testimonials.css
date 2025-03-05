@@ -1,0 +1,140 @@
+/* Seção principal */
+#testimonials {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+}
+
+/* Ajuste para o conteúdo */
+#testimonials_content {
+    width: 80%;
+    max-width: 1200px; /* Limita a largura para não espalhar demais */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos */
+    text-align: center;
+}
+
+/* Subtítulo */
+#testimonials .section-subtitle {
+    font-size: 3rem;
+}
+.section-subtitle {
+    color: var( --color-neutral-0);
+}
+
+/* Grid dos cards */
+#feedbacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaço entre os cards */
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Estilo dos cards */
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-neutral-0);
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 350px;
+}
+
+/* Avatar dos usuários */
+.feedback-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+/* Ajuste da imagem do produto dentro da tag dish */
+.dish img {
+    width: 100%; /* Garante que a imagem não ultrapasse o card */
+    max-width: 200px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    object-fit: contain; /* Ajusta a imagem dentro do espaço */
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+}
+
+/* Texto dentro dos cards */
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.feedback-content p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--color-neutral-10);
+    text-align: center;
+}
+
+.feedback-content p span {
+    color: var(--color-primary-6);
+}
+
+/* Botão */
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-5);
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 20px; /* Adiciona espaço entre os cards e o botão */
+}
+
+/* Responsividade */
+@media screen and (max-width: 1170px) {
+    #testimonials {
+        flex-direction: column;
+    }
+
+    #testimonials .section-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #testimonials_content {
+        width: 90%;
+    }
+}
+
+/* Ajuste para telas menores */
+@media screen and (max-width: 768px) {
+    #feedbacks {
+        grid-template-columns: 1fr; /* No mobile, um card por linha */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #testimonials .section-subtitle {
+        font-size: 2rem;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Cria Web</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-code dish-image"id="nav_logo">  CRIA WEB</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projeto">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/11961336586" target="_blank">
+                <button class="btn-default">
+                    Fale Comigo
+                </button>
+            </a>
+
+            <a href="https://wa.me/11961336586" target="_blank">
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </a>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Projeto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/11961336586" target="_blank">
+                <button class="btn-default">
+                    Fale Comigo
+                </button>
+            </a>
+            
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Seção Home -->
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    SEU PROJETO DIGITAL, DO ZERO AO
+                    <span>SUCESSO</span>
+                </h1>
+
+                <p class="description">
+                    Criatividade e tecnologia andam lado a lado! Com design marcante, experiência intuitiva e performance otimizada, transformo sua ideia em um site profissional e eficiente. Seja criação, manutenção ou melhorias, seu projeto digital está em boas mãos.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#testimonials" class="btn-default">
+                         Serviços
+                    </a>
+
+                    <a href="https://wa.me/5511961336586" target="_blank" class="btn-default">
+                        <i class="fa-solid fa-phone"></i>
+                   </a>
+
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5511961336586" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://instagram.com/arielefront" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#contato">
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/foto01.png" alt="">
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+
+            <div id="banner">
+                <img src="src/images/lodocomfundo.png" alt="">
+            </div>
+            <div class="container">
+                <h1 class="titulo">Prazer Somos a Cria Web</h1>
+                <p class="texto">
+                    Uma empresa dedicada a oferecer soluções inovadoras e personalizadas para o mundo digital. Com um compromisso inabalável com a excelência, transformamos ideias em realidade, garantindo qualidade, inovação e resultados concretos em cada projeto. Nossa missão é impulsionar negócios por meio de tecnologia de ponta e estratégias eficazes, sempre com transparência, profissionalismo e foco nas necessidades do cliente  
+                </p>
+            </div>
+        
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projeto">
+            <h2 class="section-title">Projetos</h2>
+            <h3 class="section-subtitle">Nossos projetos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <img src="src/images/link-nayara.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                      LinkTreen
+                    </h3>
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <div class="dish-price">
+                        <a href="https://wa.me/5511961336586" target="_blank" class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                       </a>
+                       <a href="https://criaweb.github.io/nayara-nail-designer/" target="_blank" class="btn-default">
+                        <i class="fa-solid fa-eye"></i>
+                   </a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <img src="src/images/dish.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                      Projeto 2
+                    </h3>
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <div class="dish-price">
+                        <a href="https://wa.me/5511961336586" target="_blank">
+                            <button class="btn-default">
+                              Solicite seu Orcamento
+                            </button>
+                         </a>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="src/images/dish.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                      Projeto 3
+                    </h3>
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <div class="dish-price">
+                        <a href="https://wa.me/5511961336586" target="_blank">
+                            <button class="btn-default">
+                              Solicite seu Orcamento
+                            </button>
+                         </a>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="src/images/dish.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                      Projeto 4
+                    </h3>
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <div class="dish-price">
+                        <a href="https://wa.me/5511961336586" target="_blank">
+                            <button class="btn-default">
+                              Solicite seu Orcamento
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="testimonials">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Serviços
+                </h2>
+                <h3 class="section-subtitle">
+                    Cria Web Oferece
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/lande.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Web Site               
+                            </p>
+                            <span>
+                                Criamos websites bonitos, funcionais e responsivos, feitos sob medida para suas necessidades e fáceis de gerenciar.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/globo.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Hospedagem Configuração               
+                            </p>
+                            <span>
+                                Cuido da hospedagem e configuração do seu site, garantindo que ele fique online, rápido e seguro, sem complicação.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/codigo.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Conversão de Layouts                
+                            </p>
+                            <span>
+                                Transformo designs em sites funcionais, garantindo que fiquem bonitos, fiéis ao layout e funcionando bem em todos os dispositivos.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/manu.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Manutenção Mensal               
+                            </p>
+                            <span>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-title">Contato</h2>
+            <h3 class="section-subtitle">Fale com a gente!</h3>
+        
+            <div id="contato_formulario">
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn-default">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="src/images/wave.svg" alt="svg decorativo rosa">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Ariele Silva 
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5511961336586" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://instagram.com/arielefront" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#contato">
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
