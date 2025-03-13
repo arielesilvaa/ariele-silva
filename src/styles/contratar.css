@@ -1,0 +1,64 @@
+/* Estilizando a seção */
+#contratar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: var(--color-neutral-0); /* Ajuste conforme seu tema */
+}
+
+/* Container com imagem e texto lado a lado */
+.container_contratar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Estilo da imagem */
+.contratar-img {
+    flex: 1;
+    max-width: 400px; /* Ajuste o tamanho da imagem */
+}
+
+.contratar-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo do texto */
+.contratar-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.contratar-texto .titulo {
+    font-size: 32px;
+    color: var(--color-primary-1);
+    margin-bottom: 10px;
+}
+.titulo span {
+    color: var(--color-primary-3);
+}
+
+.contratar-texto .texto {
+    font-size: 18px;
+    color: var(--color-neutral-1);
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container_contratar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contratar-texto {
+        text-align: center;
+    }
+}

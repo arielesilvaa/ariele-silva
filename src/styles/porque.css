@@ -1,0 +1,84 @@
+.wave {
+    position: relative;
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+    background: var(--color-fundo); 
+}
+
+.wave svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100px; /
+}
+
+/* Container dos Cards */
+.container_pq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Cards - Mais finos e mais compridos */
+.card {
+    width: 120px;  /* Mais fino */
+    height: 350px; /* Mais comprido */
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-1);
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Expande apenas o card que está com o mouse em cima */
+.card:hover {
+    width: 400px; /* Expande para o lado */
+    transform: scale(1.1);
+}
+
+/* Título na vertical */
+.card h1 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transition: opacity 0.3s ease-in-out;
+    font-size: 30px;
+    color: var(--color-primary-1);
+}
+
+/* Esconde o título quando o card está expandido */
+.card:hover h1 {
+    opacity: 0;
+}
+.content h2 {
+    color:var(--color-primary-3);
+    margin: 10px;
+    font-weight: 600;
+}
+
+/* Conteúdo do card */
+.card .content {
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Exibe o conteúdo apenas no card expandido */
+.card:hover .content {
+    opacity: 1;
+}

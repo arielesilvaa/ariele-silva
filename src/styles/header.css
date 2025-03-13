@@ -14,9 +14,10 @@ header {
     justify-content: space-between;
 }
 
-#nav_logo {
-    font-size: 26px;
-    color: var(--color-primary-6);
+#navbar img {
+    width: 130px;
+    height: 130px;
+    display: flex;
 }
 
 #nav_list {

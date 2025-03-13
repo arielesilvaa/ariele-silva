@@ -6,6 +6,8 @@
 @import url('footer.css');
 @import url('sobre.css');
 @import url('contato.css');
+@import url('porque.css');
+@import url('contratar.css');
 
 :root {
     --color-primary-1: #000000;
@@ -14,6 +16,8 @@
     --color-primary-4: #d256af;
     --color-primary-5: #d256af;
     --color-primary-6: #c43b9d;
+    --color-zinza: #3c3b3b;
+    --color-fundo: #f9f9f9;
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -94,3 +98,43 @@ a {
 .section-subtitle {
     font-size: 2.1875rem;
 } 
+
+
+/* Estilo do botão flutuante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 35px;  /* Ajuste da posição para ficar mais afastado */
+    background-color: transparent;
+    border: none;
+    z-index: 1000;
+    animation: pulsar 2s infinite;  /* Animação pulsante */
+}
+
+.atendente-image {
+    width: 90px;  /* Tamanho da imagem */
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(53, 52, 52, 0.565);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover */
+.whatsapp-button:hover .atendente-image {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animação pulsante (crescer e diminuir) */
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);  /* O botão cresce */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
