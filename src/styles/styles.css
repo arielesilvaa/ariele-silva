@@ -55,13 +55,25 @@ section {
     cursor: pointer;
     transition: background-color .3s ease;
 }
+
+/* Estilos para o link */
 a {
     text-decoration: none;
 }
+
+/* Efeito hover */
 .btn-default:hover {
     background-color: var(--color-primary-3);
 }
 
+/* Estilos responsivos para telas pequenas */
+@media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+    .btn-default {
+        display: block; /* Torna o botão um bloco para alinhamento */
+        width: 100%; /* Faz o botão ocupar a largura total */
+        margin: 0 auto; /* Centraliza o botão */
+    }
+}
 .social-media-buttons {
     display: flex;
     gap: 18px;
